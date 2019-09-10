@@ -9,29 +9,26 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
+import { SharedModule } from './shared/shared.module';
 
 // used to create fake backend
 @NgModule({
-    imports: [
-        BrowserModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        CoreModule,
-        AppRoutingModule
-    ],
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        LoginComponent
-    ],
-    providers: [
-        { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-        { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    CoreModule,
+    AppRoutingModule,
+    SharedModule.forRoot()
+  ],
+  declarations: [AppComponent, HomeComponent, LoginComponent],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
-        // provider used to create fake backend
-        fakeBackendProvider
-    ],
-    bootstrap: [AppComponent]
+    // provider used to create fake backend
+    fakeBackendProvider
+  ],
+  bootstrap: [AppComponent]
 })
-
-export class AppModule { }
+export class AppModule {}
