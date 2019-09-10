@@ -1,0 +1,83 @@
+<div class="container-fluid">
+  <div class="row">
+    <section class="f-section container">
+      <div class="relative-pos col-lg-4">
+        <h1>Let's build the future of the web</h1>
+        <p>Get the web's modern capabilities on your own sites and apps with useful guidance and analysis from web.dev.
+        </p>
+        <div class="btn-position">
+          <button class="btn blue-button">Explore topics</button>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <img class="first-img"
+             src="https://www.gstatic.com/devrel-devsite/vbb62cc5a3e8f17e37bae4792b437f28f787df3f9cf9732cbfcc99b4f4ff41a54/web/images/headers/future_web.svg"
+             alt="firstImg">
+      </div>
+    </section>
+  </div>
+</div>
+<div class="container-fluid second-background">
+  <div class="container">
+    <div class="row">
+      <section class="sec-section">
+        <h4>As the web advances, users' expectations grow. With web.dev's guidance, you can give your users the best
+          experience, wherever they are.</h4>
+        <div class="btn-position">
+          <button class="btn blue-button">Explore topics</button>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <section>
+        <div class="container">
+          <div class="row align-items-start" style="height: 100vh;">
+            <div *ngFor="let cd of cardsDetails" class="col">
+              <div class="row">
+                <div class="col custom-card-body">
+                  <img src="{{cd.img}}" alt="card text" class="img-fluid">
+                  <h4>{{cd.titleText}}</h4>
+                  <p>{{cd.subText}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <section class="forth-section">
+        <h1>EXPLORE TOPICS</h1>
+        <p>Learn more about a topic, and practice your skills with a hands-on codelab.</p>
+      </section>
+    </div>
+  </div>
+  <div class="row">
+    <section>
+      <div class="container">
+        <div class="row align-items-start">
+          <div *ngFor="let of of ourFacilities" class="col-lg-4">
+            <div class="row">
+              <div class="col custom-card-body">
+                <img src="{{of.img}}" alt="card text" class="img-fluid our-facility-background">
+                <h4>{{of.titleText}}</h4>
+                <p>{{of.subText}}</p>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <section></section>
+    </div>
+  </div>
+</div>
