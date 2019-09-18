@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { ErrorInterceptor, fakeBackendProvider, JwtInterceptor } from './_helpers';
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +10,8 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
+import { PostData } from './post/post-data';
+import { PostModule } from './post/post.module';
 import { SharedModule } from './shared/shared.module';
 
 // used to create fake backend
@@ -18,8 +21,10 @@ import { SharedModule } from './shared/shared.module';
     ReactiveFormsModule,
     HttpClientModule,
     CoreModule,
-    AppRoutingModule,
-    SharedModule.forRoot()
+    SharedModule.forRoot(),
+    PostModule,
+    InMemoryWebApiModule.forRoot(PostData, { delay: 1000 }),
+    AppRoutingModule
   ],
   declarations: [AppComponent, HomeComponent, LoginComponent],
   providers: [

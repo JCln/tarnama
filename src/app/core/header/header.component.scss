@@ -1,3 +1,5 @@
+@import '../../../assets/scss/total';
+
 .flex-center {
   display: flex;
   flex-direction: column;
@@ -5,131 +7,30 @@
   align-content: center;
 }
 
-@media only screen and (max-width: 576px) {
-  #Home {
-    width: 36rem;
-  }
+nav .navbar {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 576px) {
-  #GuitarHistory {
-    width: 36rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  #Videos {
-    width: 36rem;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  #PracticeVideos {
-    width: 36rem;
-  }
-}
-
-/* @media only screen and (max-width: 354px) {
-  .navbar-brand {
-    justify-content: center;
-    flex: auto;
-    text-align: center;
-    padding: 0;
-  }
-  #smallSwitchId {
-    width: 100%;
-  }
-} */
-
-@media (max-width: 800px) {
-  .navbar-collapse {
-    height: 19rem;
-    min-height: 100%;
-  }
-}
-
-nav ul {
+ul {
   margin: 0;
   padding: 0;
-}
 
-nav li {
-  padding: 0 1rem 0 1rem;
-  /* margin: 0 .5rem 0 .5rem; */
-  display: inline-block;
+  li {
+    padding: 1rem 2rem;
+    /* margin: 0 .5rem 0 .5rem; */
+    display: inline-block;
 
-  position: relative;
-}
+    position: relative;
+    cursor: pointer;
 
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: .8rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-
-nav ul > li > a::before {
-  content: '';
-  /* height with 5px would great to */
-  height: 3px;
-  display: inline-block;
-  background-color: #333;
-  z-index: -1;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav ul > li > a:hover::before {
-  width: 70%;
-}
-
-/* .text-color-size {
-  color: white;
-  font-size: 1.2rem;
-} */
-
-#header-text {
-  color: #d9524a;
-  font-size: 2rem;
-}
-
-#Videos {
-  width: 100%;
-}
-
-
-#practiceVideos {
-  height: 30rem;
-  width: 100%;
-}
-
-.carousel-next-prev-display {
-  display: block;
-}
-
-.font-size-text {
-  font-size: 1.2rem;
-}
-
-.text-aligment {
-  text-align: right;
-}
-
-@media only screen and (max-width: 576px) {
-  #se-to-TP {
-    position: absolute;
-    width: 36rem;
-    min-height: 30rem;
+    &:hover , &:focus , &:active {
+      background-color: #f4f4f4;
+      outline: 0;
+    }
   }
-}
 
-#brand-logo {
-  width: 7rem;
+}
+.brand-logo {
+  width: 9rem;
 }

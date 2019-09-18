@@ -1,79 +1,41 @@
-// shared classes
-$lightText-color: #ffffff;
+@import '../../../assets/scss/total';
 
-.second-background {
-  background: #fff;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-.relative-pos {
-  position: relative;
-  height: 20rem;
-  margin: auto;
-}
-
-.btn-position {
-  margin-top: 3rem;
-}
-
-.blue-button {
-  background-color: #3740ff;
-  color: #fff;
-  min-width: 7rem;
-  height: 3rem;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin-bottom: .5rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.2;
-  color: inherit;
-}
-
-a {
-  color: #005DA6;
-  background-color: transparent;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-  text-align: left;
-  font-size: 1.0625rem;
-  color: #333333;
-}
-
-
-// ------------------
 .custom-card-body {
+  @include hover();
   height: 30rem;
-
-  &:hover, &:focus, &:active {
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-  }
 }
 
-section.sec-section {
-  padding: 8rem 0;
-  text-align: center;
+section {
+  min-height: 200px;
+  height: auto;
+  margin: auto;
 
-  h4 {
-    font-weight: 400;
+  &.sec-section {
+    padding: 8rem 0;
+    text-align: center;
+
+    &h4 {
+      font-weight: 400;
+    }
   }
-}
-section.forth-section {
-  text-align: center;
+
+  &.forth-section {
+    padding: 3rem;
+    text-align: center;
+
+    p {
+      text-align: center;
+    }
+
+    &div {
+      margin: auto;
+    }
+  }
+
+  &.f-section {
+    // display: flex;
+  }
+
 }
 
 h4 {
@@ -82,8 +44,11 @@ h4 {
 
 .img-fluid {
   height: 14rem;
-  margin: 2rem 0 16px;
   width: 100%;
+  min-height: 14rem;
+  min-width: 100%;
+  margin: 2rem 0 16px;
+
   &.our-facility-background {
     background: #f8f9fa;
     border: 1px solid #dadce0;
@@ -94,17 +59,6 @@ h4 {
   width: 100%;
   height: 28rem;
 }
-
-section {
-  min-height: 200px;
-  height: auto;
-  margin: auto;
-}
-
-.f-section {
-  display: flex;
-}
-
 
 .entry-avatar {
   padding-right: 10px;

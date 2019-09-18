@@ -1,0 +1,25 @@
+<div class="panel panel-primary" *ngIf="post">
+  <div class="panel-heading" style="font-size:large">
+    {{pageTitle + ": " + post.productName}}
+  </div>
+
+  <div class="panel-body">
+    <div>
+      Name: {{post.productName}}
+    </div>
+    <div>
+      Code: {{post.productCode}}
+    </div>
+    <div class="has-error" *ngIf="errorMessage">{{errorMessage}}</div>
+  </div>
+
+  <div class="panel-footer">
+    <a class="btn btn-default" [routerLink]="['/postList']">
+      <i class="glyphicon glyphicon-chevron-left"></i> Back
+    </a>
+    <a class="btn btn-primary" style="width:80px;margin-left:10px"
+       [routerLink]="['/postList', post.id]">
+       Edit
+    </a>
+  </div>
+</div>

@@ -1,61 +1,58 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import {Cards} from './cards';
+import { Cards } from './cards';
 
 const cardsDetails: Cards[] = [
   {
     img: 'https://web.dev/multi-origin-pwas/hero.jpg',
-    titleText: 'Progressive Web Apps in multi-origin sites',
+    titleText: 'سامانه جامع مالی و خدمات غیرحضوری',
     subText:
-      'Challenges and workarounds for building Progressive Web Apps in multi-origin sites.'
+      'محاسبه و پرداخت قبوض در محل'
   },
   {
     img: 'https://web.dev/ready-player-web/hero.jpg',
-    titleText: 'Ready Player Web',
-    subText: 'Building games for the modern web.'
+    titleText: 'شرکت آب و فاضلاب استان تهران',
+    subText: 'اپلیکشن پرداخت قبوض مخصوص کنترخوان'
   },
   {
     img: 'https://web.dev/video-basics/hero.jpg',
-    titleText: 'Going beyond images with basic video for the web',
-    subText: 'Learn basic video. Increase engagement.'
+    titleText: 'شرکت آب و فاضلاب استان اصفهان',
+    subText: 'سامانه جامع پرداخت قبوض و اپلیکیشن پرداخت و امور خودکار تلفنی'
   }
 ];
 const ourFacilities: Cards[] = [
   {
     img: 'https://web.dev/images/collections/fast.svg',
-    titleText: 'Easily discoverable',
+    titleText: 'تهیه گزارشات',
     subText:
-      'Ensure users can find your site easily through search.'
+      'اسناد مالی ،آمار داده ها و اطلاعات ، سیستم دریافت وصولی متمرکز، آمار تجمیع استانی و بودجه'
   },
   {
     img: 'https://web.dev/images/collections/accessible.svg',
-    titleText: 'Safe and secure',
+    titleText: 'قابل اطمینان',
     subText:
-      'Ensure your site and your users\' data is secure.'
+      'سابقه نگهداری 30 ساله داده ها'
   },
   {
     img: 'https://web.dev/images/collections/reliable.svg',
-    titleText: 'Network reliability',
+    titleText: 'اپلیکشن آبفا',
     subText:
-      '\n' +
-      '        Be on users\' home screens with no need for an app store.\n' +
-      '      '
+      'اپلیکشن جامع آبفا را دانلود کنید.'
   },
   {
     img: 'https://web.dev/images/collections/discoverable.svg',
-    titleText: 'Easy discoverable',
-    subText:
-      'Challenges and workarounds for building Progressive Web Apps in multi-origin sites.'
+    titleText: 'قابل استفاده برروی',
+    subText:''
   },
   {
     img: 'https://web.dev/images/collections/secure.svg',
-    titleText: 'Safe and secure',
+    titleText: 'امن',
     subText:
-      'Challenges and workarounds for building Progressive Web Apps in multi-origin sites.'
+      ''
   },
   {
     img: 'https://web.dev/images/collections/installable.svg',
-    titleText: 'Installable',
+    titleText: 'قابل اجرا',
     subText:
       'Challenges and workarounds for building Progressive Web Apps in multi-origin sites.'
   }

@@ -5,14 +5,9 @@ import { WpCardComponent } from './core/wp-card/wp-card.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: 'WpCard', component: WpCardComponent },
   { path: '', component: WpCardComponent },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-
-  // otherwise redirect to home
+  { path: 'WpCard', component: WpCardComponent },
+  { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: 'WpCard' }
 ];
 

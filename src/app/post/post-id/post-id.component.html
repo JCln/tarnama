@@ -1,0 +1,34 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    {{pageTitle}}
+  </div>
+
+  <div class="panel-body">
+    <div class="has-error" *ngIf="errorMessage">{{errorMessage}}</div>
+
+    <div class="table-responsive">
+      <table class="table table-bordered" *ngIf="posts && posts.length">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of posts">
+            <td><a [routerLink]="[product.id]">
+                {{product.productName}}
+              </a>
+            </td>
+            <td>{{ product.productCode}}</td>
+            <td>
+              <a class="btn btn-primary" [routerLink]="[product.id]">
+                Edit
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
