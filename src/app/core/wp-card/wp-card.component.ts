@@ -4,57 +4,53 @@ import { Cards } from './cards';
 
 const cardsDetails: Cards[] = [
   {
-    img: 'https://web.dev/multi-origin-pwas/hero.jpg',
+    img: '../../../assets/imgs/phone.png',
     titleText: 'سامانه جامع مالی و خدمات غیرحضوری',
-    subText:
-      'محاسبه و پرداخت قبوض در محل'
+    subText: 'محاسبه و پرداخت قبوض در محل'
   },
   {
-    img: 'https://web.dev/ready-player-web/hero.jpg',
+    img: '../../../assets/imgs/TabfaLogo.png',
     titleText: 'شرکت آب و فاضلاب استان تهران',
-    subText: 'اپلیکشن پرداخت قبوض مخصوص کنترخوان'
+    subText: 'اپلیکشن پرداخت قبوض مخصوص کنتورخوان'
   },
   {
-    img: 'https://web.dev/video-basics/hero.jpg',
+    img: '../../../assets/imgs/EabfaLogo.png',
     titleText: 'شرکت آب و فاضلاب استان اصفهان',
     subText: 'سامانه جامع پرداخت قبوض و اپلیکیشن پرداخت و امور خودکار تلفنی'
   }
 ];
 const ourFacilities: Cards[] = [
   {
-    img: 'https://web.dev/images/collections/fast.svg',
+    img: '../../../assets/imgs/fast.PNG',
     titleText: 'تهیه گزارشات',
     subText:
       'اسناد مالی ،آمار داده ها و اطلاعات ، سیستم دریافت وصولی متمرکز، آمار تجمیع استانی و بودجه'
   },
   {
-    img: 'https://web.dev/images/collections/accessible.svg',
+    img: '../../../assets/imgs/accessible.png',
     titleText: 'قابل اطمینان',
-    subText:
-      'سابقه نگهداری 30 ساله داده ها'
+    subText: 'سابقه نگهداری 30 ساله داده ها'
   },
   {
-    img: 'https://web.dev/images/collections/reliable.svg',
+    img: '../../../assets/imgs/abfaApp.PNG',
     titleText: 'اپلیکشن آبفا',
-    subText:
-      'اپلیکشن جامع آبفا را دانلود کنید.'
+    subText: 'آیا میخواهید اپلیکیشن آبفا را دانلود کنید؟'
   },
   {
-    img: 'https://web.dev/images/collections/discoverable.svg',
+    img: '../../../assets/imgs/easyDiscoverable.PNG',
     titleText: 'قابل استفاده برروی',
-    subText:''
+    subText: 'متن آزمایشی'
   },
   {
-    img: 'https://web.dev/images/collections/secure.svg',
+    img: '../../../assets/imgs/safe.PNG',
     titleText: 'امن',
-    subText:
-      ''
+    subText: 'متن آزمایشی متن آزمایشی'
   },
   {
-    img: 'https://web.dev/images/collections/installable.svg',
+    img: '../../../assets/imgs/installable.PNG',
     titleText: 'قابل اجرا',
     subText:
-      'Challenges and workarounds for building Progressive Web Apps in multi-origin sites.'
+      'متن آزمایشی متن آزمایشی'
   }
 ];
 
@@ -67,9 +63,7 @@ export class WpCardComponent implements OnInit {
   cardsDetails = cardsDetails;
   ourFacilities = ourFacilities;
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 }
