@@ -2,7 +2,8 @@
   <nav class="navbar navbar-light navbar-expand-lg" id="fixed-top">
 
     <a class="navbar-brand" style="margin-right: 0">
-      <img src="../../../assets/imgs/logo.png" class="brand-logo" alt="شرکت تارنمای سپاهان" style="cursor: pointer; outline: 0" [routerLink]="['/Wpcard']"/>
+      <img src="../../../assets/imgs/logo.png" class="brand-logo" alt="شرکت تارنمای سپاهان"
+        style="cursor: pointer; outline: 0" [routerLink]="['/Wpcard']" />
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
@@ -14,8 +15,14 @@
 
       <ul class="nav navbar-nav">
 
-        <li routerLinkActive="active" [routerLink]="['/postList']">درباره ما</li>
-        <li routerLinkActive="active" [routerLink]="['/postList']">بخش توسعه</li>
+        <!-- <li routerLinkActive="active" [routerLink]="['/postList']">درباره ما</li> -->
+        <!-- <li routerLinkActive="active" [routerLink]="['/postList']">بخش توسعه</li> -->
+        <a href="https://ticket.tarnamasep.com/" target="_self" rel="noopener noreferrer">
+          <li>
+            ارسال درخواست پشتیبانی
+          </li>
+        </a>
+
       </ul>
 
 
