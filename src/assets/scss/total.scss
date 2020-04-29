@@ -2,6 +2,12 @@ $lightText-color: #ffffff;
 $blue-color: #3740ff;
 $link-color: #005DA6;
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 @mixin hover {
   &:hover,
   &:focus,
@@ -12,12 +18,6 @@ $link-color: #005DA6;
 
 .second-background {
   background: $lightText-color;
-}
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
 }
 
 .relative-pos {
