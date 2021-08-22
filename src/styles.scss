@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: iransans;
+  src: url(../src/assets/fonts/irsansb.ttf) format("ttf"), url(../src/assets/fonts/irsansb.ttf) format("truetype"), url(../src/assets/fonts/irsansb.ttf) format("ttf");
+}
+
+body,
+html {
+  font-family: iransans;
+}

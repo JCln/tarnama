@@ -2,14 +2,12 @@
   <div class="row">
     <section class="f-section d-sm-block d-md-flex flex-row-reverse container">
       <div class="col-sm-12 col-md-7">
-        <img class="first-img"
-          src="assets/imgs/future_web.svg"
-          alt="firstImg">
+        <img class="first-img" src="assets/imgs/future_web.svg" alt="firstImg">
       </div>
       <div class="relative-pos col-sm-12 col-md-5">
-        <h2>شرکت شبکه تارنمای سپاهان</h2>
+        <h2>شرکت شبکه تارنما سپاهان</h2>
         <br>
-        <p>با سابقه کاری 30 سال آماده همکاری با شرکت های تجاری، اداری و حسابرسی می باشد
+        <p>با شماره ثبت 37341 با سابقه کاری 15 سال آماده همکاری با اشخاص حقیقی و حقوقی می باشد
         </p>
         <div class="btn-position">
           <button class="btn blue-button col-sm-12 col-md-4">بیشتر بخوانید</button>
@@ -22,29 +20,38 @@
   <div class="container">
     <div class="row">
       <section class="sec-section">
-        <h4>ما متعهد به اجرای درست بوده و هستیم.</h4>
-        <br>
         <h5>راه اندازی و اجرای سامانه های </h5>
         <br>
-        <h5>خدمات غیرحضوری - اپلیکیشن همراه مردمی و اپراتوری - امور مالی</h5>
-        <div class="btn-position">
+        <h5>خدمات غیرحضوری - اپلیکیشن همراه مردمی و اپراتوری - امور مالی و فروشگاهی</h5>
+        <!-- <div class="btn-position">
           <button class="btn blue-button col-sm-12 col-md-4">بیشتر بخوانید</button>
-        </div>
+        </div> -->
       </section>
     </div>
   </div>
 </div>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <section class="forth-section col-sm-12 col-md-6">
+        <h1>همکاری با شرکت های آبفای</h1>
+        <p>اصفهان ، تهران ، ایلام، هرمزگان و کرمانشاه</p>
+      </section>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid second-background">
   <div class="row">
     <section class="third-section">
       <div class="container">
         <div class="row align-items-start">
-          <div *ngFor="let cd of cardsDetails" class="col-sm-12 col-md-6 col-lg-4">
+          <div *ngFor="let item of cardsDetails" class="col-sm-12 col-md-6 col-lg-4">
             <div class="row">
               <div class="col custom-card-body">
-                <img src="{{cd.img}}" alt="card text" class="img-fluid">
-                <h4>{{cd.titleText}}</h4>
-                <p>{{cd.subText}}</p>
+                <img [src]="item.img" alt="card text" class="img-fluid">
+                <h4>{{item.titleText}}</h4>
+                <p>{{item.subText}}</p>
               </div>
             </div>
           </div>
@@ -53,12 +60,13 @@
     </section>
   </div>
 </div>
-<div class="container-fluid second-background">
+
+<div class="container-fluid">
   <div class="container">
     <div class="row">
       <section class="forth-section col-sm-12 col-md-6">
-        <h1>همکاری با شرکت های آبفای</h1>
-        <p>اصفهان ، تهران ، ایلام، هرمزگان</p>
+        <h4>ما متعهد به اجرای درست بوده و هستیم.</h4>
+        <br>
       </section>
     </div>
   </div>
@@ -68,12 +76,13 @@
     <section class="fifth-section">
       <div class="container">
         <div class="row align-items-start">
-          <div *ngFor="let of of ourFacilities" class="col-md-6 col-lg-4">
+          <div *ngFor="let item of ourFacilities" class="col-md-6 col-lg-4">
             <div class="row">
               <div class="col custom-card-body">
-                <img src="{{of.img}}" alt="card text" class="img-fluid our-facility-background">
-                <h4>{{of.titleText}}</h4>
-                <p>{{of.subText}}</p>
+                <img [src]="item.img" alt="card text" class="img-fluid our-facility-background">
+                <h4>{{item.titleText}}</h4>
+                <p>{{item.subText}}</p>
+                <a *ngIf="item.url" href={{item.url}} target="_blank" rel="noopener noreferrer">دانلود از کافه بازار</a>
               </div>
               <hr>
             </div>
@@ -83,9 +92,5 @@
     </section>
   </div>
   <hr>
-  <div class="container">
-    <div class="row">
-      <section></section>
-    </div>
-  </div>
+
 </div>
